@@ -75,3 +75,6 @@ Thumbs.db
 # Project specific
 config.ini
 secrets.json
+
+# folder test
+test/
