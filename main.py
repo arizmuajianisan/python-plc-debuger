@@ -42,8 +42,8 @@ if __name__ == "__main__":
         print("Error: START_ADDRESS, END_ADDRESS, and MODBUS_PORT must be integers, and DATA must be comma-separated integers")
         sys.exit(1)
 
-    plc_writer = PLCWriter(host=modbus_host, port=modbus_port)
-    plc_reader = PLCReader(host=modbus_host, port=modbus_port)
+    plc_writer = PLCWriter()
+    plc_reader = PLCReader()
 
     def perform_operation():
         if mode.lower() == 'w':
